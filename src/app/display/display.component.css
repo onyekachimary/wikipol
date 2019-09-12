@@ -1,0 +1,8 @@
+@media(max-width:600px){
+	#imageclass1 {margin-left:10px; width:inherit;},
+	#imageclass2 {margin-left:30px;}
+}
+
+uniform_size	{
+	width: 100px
+}

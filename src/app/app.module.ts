@@ -8,13 +8,15 @@ import { environment } from '../environments/environment';
 import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import { DisplayComponent } from './display/display.component';
+import { Profile2Component } from './profile2/profile2.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ProfileComponent,
-    DisplayComponent
+    DisplayComponent,
+    Profile2Component
   ],
   imports: [
     BrowserModule,
