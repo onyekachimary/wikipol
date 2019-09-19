@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<title></title>
-</head><br>
+
+
+</head>
 <body>
 	<div class="container">
 	<div class="row">
 	<div class="col-md-6" id="imageclass1">
-		<img class="img-fluid" style="width: 400px" src="assets/images/femi-surulere.jpeg"><br><br>
-		<p>Femi Gbajabiamila (born June 25, 1962, surname also spelled Gbaja-Biamila and Gbajabiamila) is a Nigerian lawyer, All Progressives Congress Leader, and House Leader of Nigeria's 8th House of Representatives. Gbaja Biamila attended Igbobi College in Yaba, Lagos, King William's College on the Isle of Man, United Kingdom, Atlanta's John Marshall Law School, United States, and the University of Lagos in Lagos. Gbaja Biamila was elected to the House in 2003, and re-elected in 2007.</p> 
-		<p>He represents the Surulere I constituency of Lagos State in the House of Representatives. He is the House's Majority Leader.Gbaja Biamila has criticized members of Congress for switching parties. He suggested that many voters don't have access to the information to make choices based on every individual stance, and therefore are sometimes only voting for candidates based on their party alignment. He criticized floppers with this in mind, saying the effect "cannot be anything but negative."</p>	
+		<img class="img-fluid" style="width: 390px; position: absolute; height: 212px; left: 0px" src="assets/images/femi-surulere.jpeg"><br><br>
+		<p style="margin-top: 200px; position: absolute; font-weight: bold; margin-left: 100px;">Hon. Femi Gbajabiamila</p>
+		<p style="margin-top: 220px; text-align: center; font-weight: bold; color: green; margin-left: -350px">Position:</p>
+		<p style="margin-top: -30px; text-align: center; position: absolute; margin-left: 95px">House of representative member</p><br>
+		<p style="margin-top: -10px; text-align: center; font-weight: bold; color: green; margin-left: -220px">State:</p>
+		<p style="margin-top: -30px; margin-left: 150px; position: absolute;">Lagos state</p>
+		<p style="margin-top: -10px; font-weight: bold; color: green; margin-left: 110px">LGA:</p>
+		<p style="margin-top: -30px; margin-left: 150px">Surulere I</p>
+		<p style="position: absolute; width: 230px; margin-top: 50px; left: 95px; top: 320px; font-size: 12px; text-align: justify;"></p>
+		<div class="btn-container">
+			<app-readmore [text]="text" [maxLength]="100"></app-readmore>
+			<!-- <button id="toggle">Read more</button> -->
+			<!--<button id="toggle" (click)= "readMore(el)" #el>Read more</button>!-->
+		</div>
 	</div><br>	
-	<div class="form-group">
-		<textarea class="form-control" cols="30" rows="3">Send a message here....	
+	<div style="position: absolute; margin-top: 660px; width: 315px; margin-left: 26px; box-sizing: border-box; color: green;" class="form-group">
+		<textarea class="form-control" cols="30" rows="3" style="color: green">Type your message...	
 		</textarea><br>
-		<button type="button">Submit</button> 
-	</div>
-	<div class="alert">
-		<span class="closebtn" onclick="this.parentElement.style.display='none' ; Submit">&times;</span>
-		<strong>You</strong> will be notified when your message has been sent!
-		
+		<button  style="margin-left: 130px; border-radius: 25px" type="button">send</button> 
 	</div>
 	</div>
 	</div>

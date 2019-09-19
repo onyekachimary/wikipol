@@ -1,6 +1,14 @@
-@media(max-width:600px){
-	#imageclass1 {margin-left: 10px}
+/*styling for image*/
+#imageclass1 {
+    position: absolute;
+    width: 500px;
+    top: 0px;
+    margin-left: 0px;
 }
+
+.morecontent span {display: none;}
+.morelink {display: block;}
+
 
 button {
 	margin-left: 5px

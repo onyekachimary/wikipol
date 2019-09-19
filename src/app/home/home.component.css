@@ -1,3 +1,55 @@
+/* wikipol */
+#wikipol_header {
+	position: absolute;
+	width:340px;
+	height: 52px;
+	left: 120px;
+	top: 270px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 42px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #219653;
+}
+
 button {
-	margin-left: 5px
+	margin-top:50px;
+}
+
+
+/*stying for search box */
+#search {
+	position: absolute;
+	width: 315px;
+	height: 41px;
+	left: 25px;
+	top: 270px;
+	/*background: #F4F4F4;*/
+	border-radius: 20px;
+	text-align: center;
+}
+ 
+input[type="text"]{  
+                text-align: center; 
+    } 
+
+/*styling for paragraph*/
+#paragraph {
+	position: absolute;
+	width: 250px;
+	height: 44px;
+	left: 50px;
+	top: 360px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+	text-align: center;
+	color: #219653;
 }

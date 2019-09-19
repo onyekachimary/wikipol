@@ -1,0 +1,14 @@
+.text {
+	position: absolute;
+	text-align: justify;
+	width: 280px;
+	margin-left: 20px;
+
+}
+
+.readmore {
+	top: 90%;
+	height: -190%;
+	bottom: -180%
+	
+}
