@@ -6,31 +6,4 @@
     margin-left: 0px;
 }
 
-.morecontent span {display: none;}
-.morelink {display: block;}
 
-
-button {
-	margin-left: 5px
-}
-
-.alert {
-  padding: 5px;
-  background-color: green;
-  color: white;
-}
-
-.closebtn {
-  margin-left: 5px;
-  color: white;
-  font-weight: bold;
-  float: right;
-  font-size: 22px;
-  line-height: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.closebtn:hover {
-  color: black;
-}
