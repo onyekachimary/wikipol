@@ -1,25 +1,19 @@
 $primary-color: #219653;
 
-/* wikipol */
-.wiki-container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	min-height: 100vh;
-
-	.wiki-phone-view {
-		width: 100%;
-		max-width: 414px;
-		border-radius: 0px;
-	}
-}
-
 .see-border {
 	--color: red;
 
 	&, * {
 		outline: solid 1px var(--color, currentColor);
 	}
+}
+
+.home-section {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .wikipol_header {
@@ -60,10 +54,16 @@ $primary-color: #219653;
 		width: 50px;
 		display: flex;
 		flex: 0 0 50px;
+		border: none;
+		background-color: transparent;
 		align-items: center;
 		color: $primary-color;
 		justify-content: center;
 		border-left: solid 1px currentColor;
+		
+		&:hover {
+			background-color: lighten($primary-color, 80%);
+		}
 	}
 
 	input {

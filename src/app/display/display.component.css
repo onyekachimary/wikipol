@@ -1,44 +1,27 @@
-input[type="text"]{  
-                text-align: center; 
-    } 
-
-.bordered {
-	width: 500px;
-	height: 190px;
-	padding: 2.5px;
-	margin-left: -20px;
-	margin-top: 100px;
-	border: 2px solid #F8F1F1;
+.search-results > .app-user-list {
+    background-color: blue;
 }
 
-.bordered2 {
-	width: 500px;
-	height: 190px;
-	padding: 2.5px;
-	margin-left: -40px;
-	margin-top: 130px;
-	border: 2px solid #F8F1F1;
+.navbar-search {
+    display: flex;
+    padding: 1rem 1.5rem;
 }
 
-.bordered3 {
-	width: 35px;
-	position: absolute;
-	height: 32px;
-	padding: 1px;
-	margin-left: 4px;
-	margin-top: -620px;
-	border: 1px #F9F5F5;
-	background: #F9F5F5;
+.navbar-search > span {
+    flex: 0 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.bordered4 {
-	width: 180px;
-	position: absolute;
-	padding: 2px;
-	height: 35px;
-	margin-top: -620px;
-	margin-left: 60px;
-	border-radius: 10px;
-	border: 1px #F4F4F4;
-	background: #F4F4F4;
+.navbar-search input {
+    flex: 1;
+    width: auto;
+    height: 35px;
+    border-radius: 6px;
+    background-color: #e5e5e5;
+    text-indent: 15px;
+    outline: none;
+    border: none;
+    box-shadow: none;
 }

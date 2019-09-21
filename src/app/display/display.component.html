@@ -1,49 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<title></title>
-</head><br><br>
+    <section class="search-page">
+      <div class="navbar-search">
+        <span><i class="fa fa-search"></i></span>
+        <input type="text" placeholder="Enter Address" 
+          [value]="address"/>
+        <span>
+          <i class="fa fa-hamburger"></i>
+        </span>
+      </div>
 
-<body>
-<!--box and text!-->
-	<div class="container">
-	<div class="row">
-	<div class="col-md-6" id="imageclass1">
-		<div class="bordered">
-			<img src="assets/images/femi-surulere.jpeg" routerLink="/profile" style="border-radius: 50%; width: 80px; height: 80px; margin-top: 30px; margin-left: 5px">
-			<p style="margin-top: -75px; margin-left: 90px; font-weight: bold; font-size: 12px; background: #FAF4F4; width: 226px;">Hon. Femi Gbajabiamila<br>House of Representative member<br>for Surulere federal constituency, <br>Lagos State</p>
-	</div>
-
-
-<!--image and text2!-->
-<div class="col-md-6" id="imageclass2">
-	<div class="bordered2">
-		<img src="assets/images/surulere-chairman.jpeg" routerLink="/profile2" style="border-radius: 50%; width: 80px; height: 80px; margin-top:-150px; margin-left: 11px "><br>
-		<p style="margin-top: -110px; margin-left: 100px; font-weight: bold; font-size: 12px;background: #FAF4F4; width: 220px;">Mr Tajudeen Ajide<br>Chairman for Surulere Local <br>Government, Lagos State.</p><br><br>
-	</div>
-</div>
-
-<!--code for topnav icons
-		<div class="topnav">
-			<i style="position: absolute; bottom: 180%; margin-left: 85%; color: green;" class="fa fa-bars fa-2x"></i>
-		</div>!-->
-<!--code for topnav arrow!-->
-<div class="topnav">
-	<span style="position: absolute; z-index: 4; margin-top: -645px; margin-left: 0.5px; color: green; font-size: 45px">&#8592;</span>
-</div>
-<!--code for box!-->
-<div class="bordered3"></div>
-<div class="bordered4"></div>
-</div>
-</div>
-</div>
-
-</body>
-</html>
-
-
-
+      <div class="search-list">
+        <app-user-list 
+          *ngFor="let person of results" 
+          [person]="person"></app-user-list>
+      </div>
+    </section>

@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Query } from '@angular/core';
+import { Router } from '@angular/router';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +8,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  private address: string;
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(private router: Router) {
+    console.log(router.navigate);
   }
 
+  ngOnInit() {
+
+  }
+
+  NavigationExtras
+
+  findAddress(event) {
+    event.preventDefault();
+    const queryParams = { address: this.address };
+
+    this.router.navigate(['display'], { queryParams });
+  }
+
+  updateAddress(event) {
+    this.address = event.target.value;
+  }
 }
