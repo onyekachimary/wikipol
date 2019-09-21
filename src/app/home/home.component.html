@@ -1,0 +1,19 @@
+<section class="home-section">
+  <h1 class="text-center wikipol_header">Wikipol</h1>
+  <section>
+    <form (submit)="findAddress($event)" action="/display" class="input-area">
+      <input type="text" 
+      name="address" placeholder="Enter your address"
+      (keyup)="updateAddress($event)" 
+      (keyup.enter)="findAddress($event)" />
+      <button class="icon-holder">
+        <i class="fa fa-search"></i>
+      </button>
+    </form>
+
+    <p class="mb-5 paragraph text-center">
+      Please enter address with a valid <br />
+      local government area
+    </p>
+  </section>
+</section>

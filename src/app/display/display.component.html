@@ -1,0 +1,16 @@
+    <section class="search-page">
+      <div class="navbar-search">
+        <span><i class="fa fa-search"></i></span>
+        <input type="text" placeholder="Enter Address" 
+          [value]="address"/>
+        <span>
+          <i class="fa fa-hamburger"></i>
+        </span>
+      </div>
+
+      <div class="search-list">
+        <app-user-list 
+          *ngFor="let person of results" 
+          [person]="person"></app-user-list>
+      </div>
+    </section>

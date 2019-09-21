@@ -1,0 +1,22 @@
+.app-user-list {
+  display: flex;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  align-items: flex-start;
+  border-bottom: solid 1px #F8F1F1;
+
+  img {
+    height: 80px;
+    flex: 0 0 80px;
+    max-width: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+  }
+
+  article {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+  }
+}
