@@ -16,8 +16,10 @@ export class DisplayComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    const { address } = this.route.queryParams.value;
-    this.address = address;
+    this.route.queryParams.subscribe((query) => {
+      const { address } = query;
+      this.address = address;
+    });
 
     this.results = [
       {name: 'John Walker', id: 30, description: 'The walkers of the night.', position: 'Senator'},
