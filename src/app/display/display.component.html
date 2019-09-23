@@ -1,12 +1,16 @@
     <section class="search-page">
+      <div style="position: relative;">
       <div class="navbar-search">
-        <span><i class="fa fa-2x fa-search"></i></span>
+        <!--<span><i class="fa fa-2x fa-search"></i></span>!-->
+        <!-- <span style="position: absolute; z-index: 4; margin-top: 500px; margin-left: 10px; color: green; font-size: 45px">&#8592;</span> -->
         <input type="text" placeholder="Enter Address" 
           [value]="address"/>
-        <span>
-          <i class="fa fa-2x fa-bars"></i>
-        </span>
       </div>
+      <div class="to" style="font-size: 45px; color: green;  width: 50px; position: absolute; top: -10px; left: 5px; padding: 1rem 0.5rem;">
+      <span style="border: 0.5px #F9F5F5; background: #F9F5F5;" >&#8592;</span>
+    </div>
+  </div>
+
 
       <div class="search-list">
         <app-user-list 

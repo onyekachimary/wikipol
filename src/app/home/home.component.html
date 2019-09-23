@@ -1,9 +1,9 @@
 <section class="home-section">
-  <h1 class="text-center wikipol_header">Wikipol</h1>
+  <h1 class="text-center wikipol_header">wikipol</h1>
   <section>
     <form (submit)="findAddress($event)" action="/display" class="input-area">
       <input type="text" 
-      name="address" placeholder="Enter your address"
+      name="address" placeholder="enter your address"
       (keyup)="updateAddress($event)" 
       (keyup.enter)="findAddress($event)" />
       <button class="icon-holder">

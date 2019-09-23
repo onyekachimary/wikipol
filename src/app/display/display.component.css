@@ -5,21 +5,22 @@
 .navbar-search {
     display: flex;
     padding: 1rem 1.5rem;
+    width: 200px;
+    margin-left: 50px;
 }
 
-.navbar-search > span {
-    flex: 0 0 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+/*.navbar-search > span {
+    margin-left: -70px; 
+    font-size: 45px; 
+    margin-top: -20px;
+}*/
 
 .navbar-search input {
     flex: 1;
     width: auto;
     height: 35px;
     border-radius: 6px;
-    background-color: #e5e5e5;
+    background-color: #F4F4F4;
     text-indent: 15px;
     outline: none;
     border: none;
