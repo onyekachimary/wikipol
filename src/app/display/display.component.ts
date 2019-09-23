@@ -8,8 +8,8 @@ import { Person } from '../user-list/user-list.interface';
   styleUrls: ['./display.component.css']
 })
 export class DisplayComponent implements OnInit {
-  private results: Person[];
-  private address: string;
+  public results: Person[];
+  public address: string;
   constructor(
     private router: Router,
     private route: ActivatedRoute
