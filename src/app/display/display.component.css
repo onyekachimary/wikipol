@@ -26,3 +26,18 @@
     border: none;
     box-shadow: none;
 }
+
+.top { 
+    width: 50px; 
+    position: absolute; 
+    top: 10px; 
+    left: 12px; 
+}
+
+.arrow {
+   position: relative;
+   top: -35px; 
+   left: 15px;
+   bottom: 98px;
+   right: 98.5px;  
+}
