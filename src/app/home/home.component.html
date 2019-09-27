@@ -4,8 +4,7 @@
     <form (submit)="findAddress($event)" action="/display" class="input-area">
       <input type="text" 
       name="address" placeholder="enter your address"
-      (keyup)="updateAddress($event)" 
-      (keyup.enter)="findAddress($event)" />
+      [(ngModel)] = "search_text"/>
       <button class="icon-holder">
         <i class="fa fa-search"></i>
       </button>

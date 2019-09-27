@@ -1,13 +1,16 @@
 <section class="app-user-list">
     <img src="assets/images/femi-surulere.jpeg" routerLink="/profile">
     <article class="">
-        <div class="flex justify-between" style="margin-bottom: 1rem">
-            <h4>{{person.name}}</h4>
+        <div class="flex" style="margin-bottom: 1rem">
+            <h4>{{person.first_name }} {{person.last_name}}</h4>
+            <h4>{{person.lgas.name }}</h4>
+            <h4>{{person.position.name }}</h4>
+
             <!--<button class="btn btn-sm btn-outline">View Profile</button>!-->
         </div>
-        <p class="opacity-50">House of Representative member
+        <!-- <p class="opacity-50">House of Representative member
            for Surulere federal constituency,
-           Lagos State</p>
+           Lagos State</p> -->
         <!--<button class="btn btn-success">
             Send Message
         </button>!-->

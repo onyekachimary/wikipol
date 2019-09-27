@@ -1,6 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 import { Person } from './user-list.interface';
+import {ActivatedRoute} from '@angular/router';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-user-list',
@@ -8,11 +10,16 @@ import { Person } from './user-list.interface';
   styleUrls: ['./user-list.component.scss']
 })
 export class UserListComponent implements OnInit {
-  constructor() { }
+  
+  public searchResults$;
+  constructor(private dataservice:DataService, private router:ActivatedRoute) { 	
+  }
 
-  @Input('') person: Person;
+  @Input() person
+
 
   ngOnInit() {
+  	console.log(this.person)
   }
 
 }

@@ -5,10 +5,10 @@ body {
   font-family: 'Roboto';
 }
 
-.flex {
+/*.flex {
     display: flex;
 }
-
+*/
 .justify-center {
     justify-content: center
 }
@@ -18,5 +18,6 @@ body {
 }
 
 .items-center {
-    align-items: center;
+    /*align-items: center;*/
+    align-items: right;
 }

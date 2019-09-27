@@ -4,7 +4,7 @@
         <!--<span><i class="fa fa-2x fa-search"></i></span>!-->
         <!-- <span style="position: absolute; z-index: 4; margin-top: 500px; margin-left: 10px; color: green; font-size: 45px">&#8592;</span> -->
         <input type="text" placeholder="Enter Address" 
-          [value]="address"/>
+           [(ngModel)] = "address" name="address" />
       </div>
       <div class="top">
         <img src="assets/images/Rectangle.png">
@@ -14,10 +14,10 @@
     <img src="assets/images/Vector.png">
   </div>
 
-
       <div class="search-list">
         <app-user-list 
-          *ngFor="let person of results" 
-          [person]="person"></app-user-list>
+          *ngFor="let person of results$ | async" 
+          [person]="person">
+        </app-user-list>
       </div>
     </section>
