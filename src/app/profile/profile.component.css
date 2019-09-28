@@ -1,10 +1,4 @@
 /*styling for image*/
-#imageclass1 {
-    position: absolute;
-    width: 500px;
-    top: 0px;
-    margin-left: 0px;
-}
 
 .circle {
 	background-color: white;
@@ -35,5 +29,5 @@
 	border: 1.5px solid white;"*/
 
 /* extra small devices ()*/
-@media (min-width: 800px) {}
+/*@media (min-width: 800px) {}*/
 
