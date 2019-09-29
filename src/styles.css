@@ -14,3 +14,11 @@
 .items-center {
     align-items: center;
 }
+
+:root {
+    --primary-color: #219653;
+}
+
+.text-green {
+    color: var(--primary-color);
+}
