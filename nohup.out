@@ -1,0 +1,21 @@
+Watching for file changes with StatReloader
+[27/Sep/2019 13:05:42] "OPTIONS /wikipol1/test/searc/?search=14%20soloki%20street,%20aguda,%20agege%20lga HTTP/1.1" 200 0
+[27/Sep/2019 13:05:42] "GET /wikipol1/test/searc/?search=14%20soloki%20street,%20aguda,%20agege%20lga HTTP/1.1" 200 264
+[27/Sep/2019 13:06:16] "OPTIONS /wikipol1/test/searc/?search=14%20soloki%20street,%20aguda,%20agege%20lga HTTP/1.1" 200 0
+[27/Sep/2019 13:06:16] "GET /wikipol1/test/searc/?search=14%20soloki%20street,%20aguda,%20agege%20lga HTTP/1.1" 200 264
+[27/Sep/2019 13:06:39] "OPTIONS /wikipol1/test/searc/?search=14%20soloki%20street,%20aguda,%20agege%20lga HTTP/1.1" 200 0
+[27/Sep/2019 13:06:39] "GET /wikipol1/test/searc/?search=14%20soloki%20street,%20aguda,%20agege%20lga HTTP/1.1" 200 264
+[27/Sep/2019 13:08:08] "OPTIONS /wikipol1/test/searc/?search=14%20soloki%20street,%20aguda,%20surulere%20lga HTTP/1.1" 200 0
+[27/Sep/2019 13:08:08] "GET /wikipol1/test/searc/?search=14%20soloki%20street,%20aguda,%20surulere%20lga HTTP/1.1" 200 129
+[27/Sep/2019 13:08:28] "OPTIONS /wikipol1/test/searc/?search=14%20soloki%20street,%20aguda,%20surulere%20lga HTTP/1.1" 200 0
+[27/Sep/2019 13:08:28] "GET /wikipol1/test/searc/?search=14%20soloki%20street,%20aguda,%20surulere%20lga HTTP/1.1" 200 129
+[27/Sep/2019 13:09:14] "OPTIONS /wikipol1/test/searc/?search=14%20soloki%20street,%20aguda,%20surulere%20lga HTTP/1.1" 200 0
+[27/Sep/2019 13:09:41] "OPTIONS /wikipol1/test/searc/?search=14%20soloki%20street,%20aguda,%20surulere%20lga HTTP/1.1" 200 0
+[27/Sep/2019 13:18:34] "OPTIONS /wikipol1/test/searc/?search=14%20soloki%20street,%20aguda,%20surulere%20lga HTTP/1.1" 200 0
+[27/Sep/2019 13:18:34] "GET /wikipol1/test/searc/?search=14%20soloki%20street,%20aguda,%20surulere%20lga HTTP/1.1" 200 129
+[27/Sep/2019 13:19:57] "OPTIONS /wikipol1/test/searc/?search=14%20soloki%20street,%20aguda,%20surulere%20lga HTTP/1.1" 200 0
+[27/Sep/2019 13:19:57] "GET /wikipol1/test/searc/?search=14%20soloki%20street,%20aguda,%20surulere%20lga HTTP/1.1" 200 129
+[27/Sep/2019 13:24:41] "OPTIONS /wikipol1/test/searc/?search=14%20soloki%20street,%20aguda,%20surulere%20lga HTTP/1.1" 200 0
+[27/Sep/2019 13:24:42] "GET /wikipol1/test/searc/?search=14%20soloki%20street,%20aguda,%20surulere%20lga HTTP/1.1" 200 129
+[27/Sep/2019 13:24:51] "OPTIONS /wikipol1/test/searc/?search=14%20soloki%20street,%20aguda,%20surulere%20lga HTTP/1.1" 200 0
+[27/Sep/2019 13:24:51] "GET /wikipol1/test/searc/?search=14%20soloki%20street,%20aguda,%20surulere%20lga HTTP/1.1" 200 129
