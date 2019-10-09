@@ -7,38 +7,39 @@
   </nav>
   <!--code for images!-->
   <figure class="row">
-    <img
+    <img style="display: block; max-width: 100%; height: auto; width: 100%; max-height: 200px; object-fit: cover"
       class="img-fluid profile-cover"
       src="assets/images/femi-surulere.jpeg"
     />
   </figure>
 
-  <div class="profile-details">
-    <img src="assets/images/download.jpeg" class="profile-avatar" />
+  <div class="profile-details" style="margin-top: -70px;">
+    <img style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 4px solid white;"  src="assets/images/download.jpeg" class="profile-avatar" />
     <!--code for paragraphs!-->
     <article class="profile-name text-center mb-2">
       <h4 class="mb-0">Hon. Femi Gbajabiamila</h4>
-      <span class="text-green">femi@gmail.com</span>
+      <span class="text-green">femi@gmail.com</span><br><br><br>
     </article>
   </div>
 
   <article class="description">
-    <p>
+    <p style="text-align: center;">
       <b class="text-green">Position: </b>
       House of representative member
   </p>
   <hr />
-    <p>
+    <p style="text-align: center;">
       <b class="text-green">State: </b>
       Lagos State
     </p>
-    <p>
+    <p style="text-align: center;">
       <b class="text-green">LGA: </b>
       Surulere I
     </p>
   <hr />
   </article>
 
+  
   <p class="profile-description">
     Femi Gbajabiamila (born June 25, 1962, surname also spelled Gbaja-Biamila
     and Gbajabiamila) is a Nigerian lawyer. All Progressives Congress Leader,
@@ -50,16 +51,18 @@
     Lagos State in the House of Representatives. He is the House's Majority
     Leader.
   </p>
+  <!-- <form [formGroup]="profileForm"> formControlName="message"-->
   <div class="form-group">
     <textarea
       class="form-control mb-3"
       cols="70"
       rows="3"
       placeholder="Type your message..."
-    ></textarea>
-    <button type="button" class="btn btn-success" style="background: #FFFFFF; margin-left: 120px; width: 90px; border-radius: 20px"><span style="color: #219653;">send</span></button>
+    ></textarea><br>
+    <button type="submit" class="btn btn-success" style="background: #FFFFFF; margin-left: 130px; width: 90px; border-radius: 20px"><span style="color: #219653;" (click)="submitMessage()">send</span></button>
     <!-- <button type="button" class="btn btn-rounded btn-outline-success px-4">Send <i class="fa fa-send"></i></button> -->
   </div>
+<!-- </form> -->
 </section>
 
 

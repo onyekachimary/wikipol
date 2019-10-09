@@ -8,15 +8,20 @@ import { Observable } from 'rxjs';
 
 export class DataService {
 
+  private headers: HttpHeaders = new HttpHeaders();
+
   baseurl = "http://127.0.0.1:8000"
 	// baseurl = "http://18.216.93.112:8000";
-	httpHeaders = new HttpHeaders({'Content-Type': 'application/json'})
+	private httpHeaders = new HttpHeaders()
 	address = ''
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) { 
+      this.headers = this.headers.append('Accept', 'application/json');
+    this.headers = this.headers.append(  'Content-Type',  'application/json');
+  }
 
   getAllOfficials(): Observable<any> {
-  	return this.http.get(this.baseurl + '/wikipol/test/officials',
+  	return this.http.get(this.baseurl + '/wikipol1/test/officials',
   	{headers: this.httpHeaders})
   }
 
@@ -29,6 +34,22 @@ export class DataService {
   		)
 
 	} 
+
+  submitMessage(data){
+    console.log(JSON.stringify(data));
+    return this.http.post(this.baseurl + '/wikipol1/petition/',
+      JSON.stringify(data),
+      {headers:this.headers}
+
+  // sendmessage(formValue){
+  //   const headers = new HttpHeaders()
+  //   headers.append('Content-Type', 'application/json')
+  //   return this.http.post(this.baseurl + 'wikipol1/test/officials', formValue, {headers})
+      
+    )
+    
+  }
+
 }
 
 
