@@ -44,8 +44,8 @@ INSTALLED_APPS = [
 ]
 
 CORS_ORIGIN_WHITELIST = (
-    # "http://18.216.93.112",
-    "http://localhost:4200",
+    "http://18.216.93.112",
+    # "http://localhost:4200",
 )
 
 MIDDLEWARE = [
