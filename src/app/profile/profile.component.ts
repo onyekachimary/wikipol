@@ -30,14 +30,18 @@ profileForm;
   }
 
 submitMessage(){
-  console.log(this.profileForm.value);
   this.dataservice.submitMessage(this.profileForm).subscribe(
-    response => {
-      alert('You will be notified when your message has been sent')
-    },
-    error => console.log(error)
+    data=>{console.log(data)},error=>{console.log(error)})
 
-    );
+}
+  // }
+    // console.log(this.profileForm.get('message').value)
+    // response => {
+    //   alert('You will be notified when your message has been sent')
+    
+    // error => console.log(error)
+
+    
 }
   // onSubmit() {
   //   console.log(this.profileForm.value);
@@ -53,24 +57,6 @@ submitMessage(){
 
 
 
-  // submit() {
-  //   window.alert("Message sent successfully")
-  // }
-  // onSubmit() {
-  //   console.log(this.profileForm.get('message').value)
-
-  //   }
-  //   error => {console.log(error)}
-  //   )
-  //   this.submit()
-  // }
+  
 
 
-
-
-  // readMore(el){
-  // 	console.log(el.text);
-  // 	console.log(el.slideDown)
-  // }
-
-}
