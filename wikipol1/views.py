@@ -12,6 +12,7 @@ from rest_framework.parsers import JSONParser, MultiPartParser, FormParser
 from django.core.mail import send_mail
 from django.conf import settings
 from django.shortcuts import get_object_or_404
+from django.core.mail import EmailMessage
 
 # Create your views here.
 
@@ -53,18 +54,33 @@ class Petition(APIView):
     def post(self,request):
     	if request.data:
     		message=request.data.get('message')
+    		print(message)
     		# officials = get_object_or_404(Officials, pk=officials_id)
     		# officials_id = request.data.get('officials_id')
     		# officials = Officials.objects.get(pk=officials_id)
     		sender_name = request.data.get('sender_name')
+    		# send_mail(
+      #               subject='test mails',
+      #               message=message,
+      #               recipient_list=['maryonyi144@gmail.com'],
+      #               from_email='admin@linuxjobber.com'
+      #           )
+    		send_mail(
+                   	'test mails from wikipol',
+                     message,
+                     settings.EMAIL_HOST_USER, ['maryonyi144@gmail.com', 'joseph.showunmi@linuxjobber.com'])
+                     
+
+    		return Response({'mess':message},status=status.HTTP_200_OK)
+
+    		
     		# send_mail(
     		# 	subject='Petition from{}'.format(sender_name),
     		# 	message=message,
     		# 	# recipent_list= Officials.email,
     		# 	# from_email='admin@linuxjobber.com'
     		# )
-    		return Response("You will notified when your message has been sent")
-
+    		# return Response("You will notified when your message has been sent")
 
 
 # def set_as_sent(self):
