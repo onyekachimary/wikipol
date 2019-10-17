@@ -27,7 +27,7 @@
       <b class="text-green">Position: </b>
       House of representative member
   </p>
-  <hr />
+  <hr style="margin-top: 5px; margin-bottom: 5px" />
     <p style="text-align: center;">
       <b class="text-green">State: </b>
       Lagos State
@@ -36,7 +36,7 @@
       <b class="text-green">LGA: </b>
       Surulere I
     </p>
-  <hr />
+  <hr style="margin-top: 5px; margin-bottom: 5px" />
   </article>
 
   
@@ -58,7 +58,8 @@
       cols="70"
       rows="3"
       placeholder="Type your message..."
-    ></textarea><br>
+      [(ngModel)] = "message" name="profileForm"
+    ></textarea><br> 
 
     <!-- Button trigger modal -->
 <button (click)="submitMessage()" style="background: #FFFFFF; margin-left: 130px; width: 90px; border-radius: 20px" type="submit" class="btn btn-success" data-toggle="modal" data-target="#exampleModal"><span style="color: #219653">send</span>

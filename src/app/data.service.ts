@@ -10,7 +10,7 @@ export class DataService {
 
   private headers: HttpHeaders = new HttpHeaders();
 
-  // baseurl = "http://127.0.0.1:8000"
+   // baseurl = "http://127.0.0.1:8000"
 	baseurl = "http://18.216.93.112:8000";
 	private httpHeaders = new HttpHeaders()
 	address = ''
@@ -35,11 +35,12 @@ export class DataService {
 
 	} 
 
-  submitMessage(data){
-    console.log(JSON.stringify(data));
+  submitMessage(message){
+    console.log(JSON.stringify(message));
     return this.http.post(this.baseurl + '/wikipol1/petition/',
-      JSON.stringify(data),
+      JSON.stringify({message:message}),
       {headers:this.headers}
+
 
   // sendmessage(formValue){
   //   const headers = new HttpHeaders()

@@ -9,7 +9,7 @@ import $ from "jquery";
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-profileForm;
+  public message: string = '';
   // public profileForm: FormGroup;
 
   constructor (private dataservice:DataService) {}
@@ -21,17 +21,18 @@ profileForm;
   //     Validators.required ])})}
 
   ngOnInit() {
-    this.profileForm = {
-      message: ''
-    }
+    // this.profileForm = {
+    //   message: ''
+    // }
     // this.profileForm = new FormGroup({
     //   message: new FormControl(''),
     // });
   }
 
 submitMessage(){
-  this.dataservice.submitMessage(this.profileForm).subscribe(
-    data=>{console.log(data)},error=>{console.log(error)})
+  console.log(this.message)
+  this.dataservice.submitMessage(this.message).subscribe(
+   data=>{console.log(data)},error=>{console.log(error)})
 
 }
   // }
