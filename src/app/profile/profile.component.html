@@ -42,15 +42,36 @@
   
   <p class="profile-description">
     Femi Gbajabiamila (born June 25, 1962, surname also spelled Gbaja-Biamila
-    and Gbajabiamila) is a Nigerian lawyer. All Progressives Congress Leader,
+    and Gbajabiamila) is a Nigerian lawyer.<span id="dots" #dots>...</span><span id="more" #moreText>All Progressives Congress Leader,
     and House Leader of Nigeria's 8th House of Representatives. Gbaja Biamila
     attended Igbobi College in Yaba, Lagos, King William's College on the Isle
     of Man, United Kingdom, Atlanta's John Marshall Law School, United States,
     and the University of Lagos in Lagos. Gbaja Biamila was elected to the House
     in 2003, and re-elected in 2007.He represents the Surulere I constituency of
     Lagos State in the House of Representatives. He is the House's Majority
-    Leader.
+    Leader.</span>
   </p>
+  <!-- <button onclick="myFunction()" id="myBtn">Read more</button> -->
+  <button (click)="readMore(dots, moreText, btnText)" id="myBtn" #btnText>Read more</button><br><br>
+  <!-- <button (click)="readMore(dots, moreText, btnText)" type="submit" class="btn btn-success" style="background: #FFFFFF; border-radius: 20px" id="myBtn" #btnText><span style="color: #219653">Read more</span></button><br><br> -->
+  <!-- <script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less"; 
+      moreText.style.display = "inline";
+  }
+}
+</script> -->
   <!-- <form [formGroup]="profileForm"> formControlName="message"-->
   <div class="form-group">
     <textarea
